@@ -90,16 +90,34 @@ h6 {
 /*--------------------*/
 body {
   font-family: "Noto Sans";
-  font-size: 25px;
+  font-size: 2rem;
+  background-color: #fcfc62;
 }
 
-[class*=__container] {
-  margin: 0 auto;
-  padding: 0 15px;
+.container {
+  width: 95%;
+  height: 100vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.wrapper {
-  overflow: hidden;
+.counter {
+  border: 5px solid #000;
+  width: 600px;
+  height: 350px;
+  margin: auto;
+  padding: 25px;
+  text-align: center;
+  background-color: #feffea;
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,11 +125,21 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.page {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+#count {
+  font-size: 9rem;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 10px 10px;
 }
