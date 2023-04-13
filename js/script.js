@@ -3,12 +3,8 @@
 let count = 0;
 
 function changeCount(num) {
-	if (num > 0) {
-		count++;
-	}
-	else {
-		count--;
-	}
+
+	count += num;
 
 	document.getElementById("count").innerHTML = count;
 }
